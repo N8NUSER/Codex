@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>URSEVEN Fulfillment — Уральск</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content container">
+      <img src="assets/urseven-logo.svg" alt="URSEVEN" class="hero__logo" />
+      <h1 class="hero__title">Фулфилмент URSEVEN в Уральске</h1>
+      <p class="hero__subtitle">
+        Надёжный партнёр для продавцов маркетплейсов. Мы объединили динамику Wildberries и силу команды URSEVEN,
+        чтобы ваш бизнес рос быстрее.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#form">Оставить заявку</a>
+        <span class="hero__address">г. Уральск, ул. Матросова 2/7</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section advantages">
+      <div class="container">
+        <h2 class="section__title">Почему выбирают URSEVEN</h2>
+        <div class="grid grid--3">
+          <article class="card">
+            <h3 class="card__title">Полный цикл фулфилмента</h3>
+            <p class="card__text">Приём, хранение, сборка, упаковка и отправка — всё берём на себя, чтобы вы
+              сосредоточились на продажах.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Продуманные процессы</h3>
+            <p class="card__text">Автоматизированные учётные системы и регулярная отчётность обеспечивают прозрачность
+              на каждом этапе.</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">Команда экспертов</h3>
+            <p class="card__text">Наши специалисты знают требования Wildberries и других маркетплейсов и помогают
+              масштабировать продажи без ошибок.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section highlight">
+      <div class="container highlight__wrapper">
+        <div class="highlight__content">
+          <h2 class="section__title section__title--light">Высокооплачиваемая работа в URSEVEN</h2>
+          <p class="highlight__text">
+            Присоединяйтесь к современной команде, где ценят инициативу и результат. Мы обеспечиваем официальное
+            трудоустройство, понятную систему премий и обучение новым навыкам.
+          </p>
+          <ul class="list">
+            <li class="list__item">Достойная оплата и премирование за эффективность</li>
+            <li class="list__item">Гибкие смены и комфортный график</li>
+            <li class="list__item">Современный склад в центре Уральска</li>
+            <li class="list__item">Обучение стандартам Wildberries</li>
+          </ul>
+        </div>
+        <div class="highlight__cta">
+          <div class="cta-card">
+            <p class="cta-card__label">Готовы начать?</p>
+            <p class="cta-card__text">Оставьте свои контакты — мы свяжемся с вами и расскажем обо всех условиях.</p>
+            <a class="btn btn--secondary" href="#form">Связаться с нами</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section conditions">
+      <div class="container">
+        <h2 class="section__title">Условия сотрудничества</h2>
+        <div class="grid grid--3">
+          <article class="card card--border">
+            <h3 class="card__title">Прозрачные тарифы</h3>
+            <p class="card__text">Гибкая стоимость услуг: платите только за фактическую обработку и хранение.</p>
+          </article>
+          <article class="card card--border">
+            <h3 class="card__title">Интеграция с Wildberries</h3>
+            <p class="card__text">Настраиваем интеграцию, следим за остатками и оперативно готовим поставки.</p>
+          </article>
+          <article class="card card--border">
+            <h3 class="card__title">Персональный менеджер</h3>
+            <p class="card__text">Вас сопровождает эксперт, который знает специфику вашего бизнеса и быстро решает
+              вопросы.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section form-section" id="form">
+      <div class="container form-section__wrapper">
+        <div class="form-section__content">
+          <h2 class="section__title">Оставьте заявку</h2>
+          <p class="form-section__text">
+            Заполните форму, и мы оперативно свяжемся с вами, чтобы обсудить запуск фулфилмента или работу в команде
+            URSEVEN.
+          </p>
+          <address class="form-section__address">Наш адрес: г. Уральск, ул. Матросова 2/7</address>
+        </div>
+        <form class="form" id="leadForm" data-telegram-token="YOUR_BOT_TOKEN" data-telegram-chat-id="YOUR_CHAT_ID">
+          <label class="form__field">
+            <span class="form__label">Имя</span>
+            <input type="text" name="name" placeholder="Введите ваше имя" required />
+          </label>
+          <label class="form__field">
+            <span class="form__label">Номер телефона</span>
+            <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" pattern="[0-9+\-()\s]{10,}" required />
+          </label>
+          <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+          <p class="form__note">Отправляя форму, вы соглашаетесь с обработкой персональных данных.</p>
+          <p class="form__feedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <div class="footer__branding">
+        <img src="assets/urseven-logo.svg" alt="URSEVEN" class="footer__logo" />
+        <p class="footer__text">URSEVEN Fulfillment — профессиональная поддержка вашего бизнеса на маркетплейсах.</p>
+      </div>
+      <div class="footer__contacts">
+        <a href="tel:+77000000000" class="footer__link">Тел.: +7 (700) 000-00-00</a>
+        <a href="mailto:info@urseven.kz" class="footer__link">info@urseven.kz</a>
+        <span class="footer__address">г. Уральск, ул. Матросова 2/7</span>
+      </div>
+    </div>
+    <p class="footer__legal">© <span id="year"></span> URSEVEN. Все права защищены.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
